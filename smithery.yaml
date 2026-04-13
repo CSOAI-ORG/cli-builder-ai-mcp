@@ -1,0 +1,10 @@
+name: cli-builder-ai-mcp
+description: "MEOK AI Labs — CLI tool generation and parsing utilities powered by MEOK AI Labs."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/cli-builder-ai-mcp
+license: MIT
+categories: [Developer Tools, CLI]
+tags: [cli, command-line, terminal-tools, cli-generator, argparse]
+runtime: python
+entrypoint: server.py

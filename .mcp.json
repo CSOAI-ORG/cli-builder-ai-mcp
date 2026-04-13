@@ -1,0 +1,23 @@
+{
+  "name": "cli-builder-ai-mcp",
+  "description": "MEOK AI Labs \u2014 CLI tool generation and parsing utilities powered by MEOK AI Labs.",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/cli-builder-ai-mcp",
+  "runtime": "python",
+  "entrypoint": "server.py",
+  "tools": [
+    "generate_argparse",
+    "generate_click",
+    "parse_help_text",
+    "generate_manpage"
+  ],
+  "categories": [
+    "Developer Tools",
+    "CLI"
+  ],
+  "pricing": {
+    "free": "50 calls/day",
+    "pro": "$9/mo"
+  }
+}
