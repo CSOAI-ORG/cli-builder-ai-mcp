@@ -1,23 +1,111 @@
 {
   "name": "cli-builder-ai-mcp",
-  "description": "MEOK AI Labs \u2014 CLI tool generation and parsing utilities powered by MEOK AI Labs.",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/cli-builder-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "Argparse/Click code generation, help text parsing, and man page generation.",
+  "version": "1.0.0",
   "tools": [
-    "generate_argparse",
-    "generate_click",
-    "parse_help_text",
-    "generate_manpage"
-  ],
-  "categories": [
-    "Developer Tools",
-    "CLI"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "generate_argparse",
+      "description": "Generate Python argparse CLI boilerplate code.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "program_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "arguments": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "subcommands": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "program_name",
+          "description",
+          "arguments"
+        ]
+      }
+    },
+    {
+      "name": "generate_click",
+      "description": "Generate Python Click CLI boilerplate code.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "program_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "commands": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "program_name",
+          "description",
+          "commands"
+        ]
+      }
+    },
+    {
+      "name": "parse_help_text",
+      "description": "Parse CLI help text output into structured command/option data.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "help_text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "help_text"
+        ]
+      }
+    },
+    {
+      "name": "generate_manpage",
+      "description": "Generate a man page in troff format.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "program_name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "synopsis": {
+            "type": "string"
+          },
+          "options": {
+            "type": "string"
+          },
+          "examples": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "program_name",
+          "description"
+        ]
+      }
+    }
+  ]
 }

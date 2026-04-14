@@ -1,10 +1,61 @@
 name: cli-builder-ai-mcp
-description: "MEOK AI Labs — CLI tool generation and parsing utilities powered by MEOK AI Labs."
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/cli-builder-ai-mcp
-license: MIT
-categories: [Developer Tools, CLI]
-tags: [cli, command-line, terminal-tools, cli-generator, argparse]
-runtime: python
-entrypoint: server.py
+description: Argparse/Click code generation, help text parsing, and man page generation.
+version: 1.0.0
+tools:
+- name: generate_argparse
+  description: Generate Python argparse CLI boilerplate code.
+  parameters:
+  - name: program_name
+    type: string
+    required: true
+  - name: description
+    type: string
+    required: true
+  - name: arguments
+    type: array
+    required: true
+  - name: subcommands
+    type: string
+    required: false
+- name: generate_click
+  description: Generate Python Click CLI boilerplate code.
+  parameters:
+  - name: program_name
+    type: string
+    required: true
+  - name: description
+    type: string
+    required: true
+  - name: commands
+    type: array
+    required: true
+- name: parse_help_text
+  description: Parse CLI help text output into structured command/option data.
+  parameters:
+  - name: help_text
+    type: string
+    required: true
+- name: generate_manpage
+  description: Generate a man page in troff format.
+  parameters:
+  - name: program_name
+    type: string
+    required: true
+  - name: description
+    type: string
+    required: true
+  - name: version
+    type: string
+    required: false
+  - name: synopsis
+    type: string
+    required: false
+  - name: options
+    type: string
+    required: false
+  - name: examples
+    type: string
+    required: false
+  - name: author
+    type: string
+    required: false
