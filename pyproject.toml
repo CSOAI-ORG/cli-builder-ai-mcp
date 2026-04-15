@@ -22,3 +22,6 @@ Repository = "https://github.com/CSOAI-ORG/cli-builder-ai-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
 only-include = ["server.py"]
+
+[project.scripts]
+cli_builder_ai_mcp = "server:main"
