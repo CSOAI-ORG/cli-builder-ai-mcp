@@ -1,5 +1,6 @@
 name: cli-builder-ai-mcp
-description: MEOK AI Labs MCP Server
+description: Cli Builder Ai automation via MCP. Includes generate argparse, generate
+  click, parse help text. By MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: generate_argparse
