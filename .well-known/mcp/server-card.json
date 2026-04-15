@@ -1,0 +1,53 @@
+{
+  "name": "cli-builder-ai",
+  "description": "Cli Builder Ai tools powered by MEOK AI Labs.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/cli-builder-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "generate_argparse",
+      "description": "Generate Python argparse CLI boilerplate code."
+    },
+    {
+      "name": "generate_click",
+      "description": "Generate Python Click CLI boilerplate code."
+    },
+    {
+      "name": "parse_help_text",
+      "description": "Parse CLI help text output into structured command/option data."
+    },
+    {
+      "name": "generate_manpage",
+      "description": "Generate a man page in troff format."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Developer Tools"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
