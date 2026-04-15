@@ -1,6 +1,6 @@
 {
   "name": "cli-builder-ai-mcp",
-  "description": "Argparse/Click code generation, help text parsing, and man page generation.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": [
     {
@@ -16,13 +16,10 @@
             "type": "string"
           },
           "arguments": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
+            "type": "array"
           },
           "subcommands": {
-            "type": "string"
+            "type": "array"
           }
         },
         "required": [
@@ -45,10 +42,7 @@
             "type": "string"
           },
           "commands": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
+            "type": "array"
           }
         },
         "required": [
@@ -92,10 +86,10 @@
             "type": "string"
           },
           "options": {
-            "type": "string"
+            "type": "array"
           },
           "examples": {
-            "type": "string"
+            "type": "array"
           },
           "author": {
             "type": "string"
