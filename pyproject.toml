@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "cli-builder-ai-mcp"
-version = "1.0.3"
+version = "1.0.4"
 readme = "README.md"
 description = "Cli Builder Ai automation via MCP. Includes generate argparse, generate click, parse help text. By MEOK AI Labs."
 license = {file = "LICENSE"}
