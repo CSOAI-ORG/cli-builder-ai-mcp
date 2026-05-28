@@ -5,7 +5,6 @@ CLI tool generation and parsing utilities powered by MEOK AI Labs.
 
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import re
@@ -70,7 +69,7 @@ def generate_argparse(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
 
     _check_rate_limit("generate_argparse")
     lines = ['import argparse', '', '']
@@ -172,7 +171,7 @@ def generate_click(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
 
     _check_rate_limit("generate_click")
     lines = ['import click', '', '']
@@ -253,7 +252,7 @@ def parse_help_text(help_text: str, api_key: str = "") -> dict:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
 
     _check_rate_limit("parse_help_text")
     result = {"program": "", "description": "", "commands": [], "options": [], "positional_args": []}
@@ -344,10 +343,19 @@ def generate_manpage(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": STRIPE_199}
 
     _check_rate_limit("generate_manpage")
     from datetime import date
+
+STRIPE_199 = "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"
+
+def _add_upgrade_tail(response, tier="free"):
+    """Append upgrade nudge to free-tier success responses."""
+    if isinstance(response, dict) and tier == "free":
+        response["_upgrade_note"] = "Pro tier: unlimited calls + priority support. Upgrade: " + STRIPE_199
+    return response
+
     today = date.today().strftime("%B %Y")
     name_upper = program_name.upper()
     lines = [
@@ -378,5 +386,8 @@ def generate_manpage(
             "sections": sum(1 for l in lines if l.startswith('.SH'))}
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
