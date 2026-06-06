@@ -1,0 +1,25 @@
+{
+  "name": "cli-builder-ai-mcp",
+  "title": "Cli Builder Ai Mcp",
+  "description": "Cli Builder Ai automation via MCP. Includes generate argparse, generate click, parse help text. By MEOK AI Labs.",
+  "version": "1.0.7",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "generate_argparse"
+    },
+    {
+      "name": "generate_click"
+    },
+    {
+      "name": "parse_help_text"
+    },
+    {
+      "name": "generate_manpage"
+    }
+  ]
+}

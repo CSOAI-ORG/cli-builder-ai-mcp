@@ -1,0 +1,33 @@
+# cli-builder-ai-mcp
+# CLI tool generation and parsing utilities powered by MEOK AI Labs.
+
+## Install
+```bash
+pip install cli-builder-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `generate_argparse`
+Generate Python argparse CLI boilerplate code.
+
+### `generate_click`
+Generate Python Click CLI boilerplate code.
+
+### `parse_help_text`
+Parse CLI help text output into structured command/option data.
+
+### `generate_manpage`
+Generate a man page in troff format.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.
