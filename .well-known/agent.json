@@ -1,0 +1,59 @@
+{
+  "name": "cli-builder-ai-mcp",
+  "description": "Cli Builder Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/cli-builder-ai-mcp.html",
+  "version": "1.0.7",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "generate_argparse",
+      "name": "Generate Argparse",
+      "description": "generate_argparse via cli-builder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_click",
+      "name": "Generate Click",
+      "description": "generate_click via cli-builder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "parse_help_text",
+      "name": "Parse Help Text",
+      "description": "parse_help_text via cli-builder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_manpage",
+      "name": "Generate Manpage",
+      "description": "generate_manpage via cli-builder-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

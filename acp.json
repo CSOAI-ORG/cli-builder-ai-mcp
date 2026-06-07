@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "cli-builder-ai-mcp",
+    "description": "Cli Builder Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.7",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "cli-builder-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "generate_argparse",
+      "generate_click",
+      "parse_help_text",
+      "generate_manpage"
+    ]
+  }
+}
