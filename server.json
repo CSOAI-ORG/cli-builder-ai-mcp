@@ -4,9 +4,9 @@
   "version": "1.0.9",
   "description": "Cli Builder Ai MCP Server by MEOK AI Labs",
   "repository": {
-    "type": "git",
     "url": "https://github.com/CSOAI-ORG/cli-builder-ai-mcp",
-    "source": "https://github.com/CSOAI-ORG/cli-builder-ai-mcp"
+    "source": "github",
+    "id": "1209394714"
   },
   "packages": [
     {
