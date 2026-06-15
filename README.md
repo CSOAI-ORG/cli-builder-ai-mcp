@@ -1,4 +1,4 @@
-<!-- mcp-name: CSOAI-ORG/cli-builder-ai-mcp -->
+<!-- mcp-name: io.github.CSOAI-ORG/cli-builder-ai-mcp -->
 [![MCP Scorecard: 86/100](https://img.shields.io/badge/proofof.ai-86%2F100-5b21b6)](https://proofof.ai/scorecard/cli-builder-ai-mcp.html)
 
 # Cli Builder Ai MCP
@@ -138,3 +138,8 @@ Once configured, ask your assistant, for example:
 - "Use `generate_argparse` to …"
 - "Use `generate_click` to …"
 - "Use `parse_help_text` to …"
+
+## See also
+
+MEOK compliance MCP fleet:
+[`ci-cd-generator-ai-mcp`](https://github.com/CSOAI-ORG/ci-cd-generator-ai-mcp), [`linkedin-outreach-mcp`](https://github.com/CSOAI-ORG/linkedin-outreach-mcp), [`lorem-ipsum-ai-mcp`](https://github.com/CSOAI-ORG/lorem-ipsum-ai-mcp), [`otp-ai-mcp`](https://github.com/CSOAI-ORG/otp-ai-mcp), [`recruitment-ai-mcp`](https://github.com/CSOAI-ORG/recruitment-ai-mcp)
